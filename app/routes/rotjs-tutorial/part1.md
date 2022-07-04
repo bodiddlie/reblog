@@ -1,9 +1,9 @@
 ---
 title: 'ROT.js Tutorial Part 1: Drawing the "@" symbol and moving it around'
-date: 2022-07-03T08:00:00.000Z
+date: 2022-07-04T08:00:00.000Z
 meta:
   title: 'ROT.js Tutorial Part 1: Drawing the "@" symbol and moving it around'
-  date: "July 3, 2022"
+  date: "July 4, 2022"
   description: "Now that we have a working application to start from, it's time to add one of the most important parts of a roguelike game: a player character that you can move around on screen! We'll start with a little housekeeping on the code we've written so far, get a character drawn on the screen, then add the ability to move it around via the arrow keys on your keyboard."
 ---
 
