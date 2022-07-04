@@ -3,6 +3,7 @@ import {Link, useLoaderData} from "@remix-run/react";
 import type {LoaderFunction} from "@remix-run/node";
 
 import * as part0 from './part0.md';
+import * as part1 from './part1.md';
 
 function postFromModule(mod: any) {
   return {
@@ -13,7 +14,8 @@ function postFromModule(mod: any) {
 
 export const loader: LoaderFunction = async () => {
   return json([
-    postFromModule(part0)
+    postFromModule(part0),
+    postFromModule(part1),
   ])
 }
 

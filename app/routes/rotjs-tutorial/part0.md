@@ -2,7 +2,7 @@
 title: 'ROT.js Tutorial Part 0'
 date: 2022-07-03T08:00:00.000Z
 meta:
-  title: ROT.js Tutorial Part 0
+  title: ROT.js Tutorial Part 0 
   date: "July 3, 2022"
   description: As part of the 2022 RoguelikeDev Does The Complete Roguelike Tutorial I've decided to adapt the tutorial for ROT.js. There's a variety of ways to get a ROT.js application up and running. For this tutorial we'll be writing our code in Typescript so we have nice strongly typed code, to handle our transpiling and bundling we'll use ViteJS, and of course we'll use ROT.js, a javascript library modeled after libtcod. So let's get started!
 ---
@@ -15,6 +15,14 @@ I've decided to adapt the tutorial for [ROT.js](https://ondras.github.io/rot.js/
 get a ROT.js application up and running. For this tutorial we'll be writing our code in Typescript so we have nice
 strongly typed code, to handle our transpiling and bundling we'll use ViteJS, and of course we'll use ROT.js, a javascript
 library modeled after libtcod. So let's get started!
+
+### Initial Setup
+
+Since we'll be using Typescript to write our game, we're going to need a development environment that will support that.
+To start we'll install NodeJS. While we won't be writing NodeJS code directly, we'll be using the Node Package Manager
+(NPM) to create our project and install any dependencies we have. Go to the [NodeJS home page](https://nodejs.org/) and
+download and install for your operating system. Once that's done you should be able to execute the command `npm -v` and 
+see the version of NPM that you have installed. Next we'll get our project created and ready to go.
 
 ### Vite-al Signs
 
@@ -31,6 +39,10 @@ Getting started requires just a simple, single, npm command:
 ```
 npm create vite@latest js-rogue-tutorial
 ```
+
+`npm create` is an alias for `npm init`. Init is the canonical command for initializing a new Node project. Create has
+been adopted by the development community as how to create a new project based off of a template. Just know that you could
+do the same with either Init or Create. 
 
 For purposes of the tutorial we'll be using a vanilla Typescript setup so:
 
@@ -159,4 +171,4 @@ we can then call our `render` method on our engine, which will cause our "Hello 
 ### Wrap Up
 
 You should now have a working application that displays some simple "Hello World" text in a ROT.js display in your browser.
-Stay tuned for Part 1!
+Stay tuned for [Part 1](/rotjs-tutorial/part1)!
