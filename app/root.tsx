@@ -34,7 +34,8 @@ export default function App() {
           <header className="bg-zinc-800 text-white py-8 px-4 flex flex-row justify-between">
             <div className="flex items-center justify-between">
               <Link className="text-2xl block hover:underline mr-8" to="/">Nick Klepinger</Link>
-              <Link className="hover:underline" to="/blog">Blog</Link>
+              <Link className="hover:underline mr-6" to="/blog">Blog</Link>
+              <Link className="hover:underline" to="/rotjs-tutorial">ROT.js Tutorial</Link>
             </div>
             <div className="flex items-center justify-between">
                 <a href="https://github.com/bodiddlie">

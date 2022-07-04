@@ -14,9 +14,9 @@ export const links: LinksFunction = () => {
 export default function Blog() {
   return (
     <div className="w-3/4">
-    <div className="prose max-w-none lg:prose-lg py-10 pl-5">
-      <Outlet />
-    </div>
+      <div className="prose max-w-none lg:prose-lg py-10 pl-5">
+        <Outlet />
+      </div>
     </div>
   )
 }
