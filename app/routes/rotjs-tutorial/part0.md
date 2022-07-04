@@ -21,7 +21,7 @@ library modeled after libtcod. So let's get started!
 Since we'll be using Typescript to write our game, we're going to need a development environment that will support that.
 To start we'll install NodeJS. While we won't be writing NodeJS code directly, we'll be using the Node Package Manager
 (NPM) to create our project and install any dependencies we have. Go to the [NodeJS home page](https://nodejs.org/) and
-download and install for your operating system. Once that's done you should be able to execute the command `npm -v` and 
+download and install for your operating system. Once that's done, you should be able to execute the command `npm -v` and 
 see the version of NPM that you have installed. Next we'll get our project created and ready to go.
 
 ### Vite-al Signs
