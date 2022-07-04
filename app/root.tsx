@@ -30,8 +30,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-      {process.env.NODE_ENV === "development" ? (
-        <>
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73423130-1"></script>
           <script dangerouslySetInnerHTML={{
             __html: `
@@ -43,9 +41,6 @@ export default function App() {
             `
           }}
           />
-
-        </>
-      ): null}
         <div className="flex flex-col">
           <header className="bg-zinc-800 text-white py-8 px-4 flex flex-row justify-between">
             <div className="flex items-center justify-between">
