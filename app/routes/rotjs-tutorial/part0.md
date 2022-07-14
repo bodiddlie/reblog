@@ -171,4 +171,4 @@ we can then call our `render` method on our engine, which will cause our "Hello 
 ### Wrap Up
 
 You should now have a working application that displays some simple "Hello World" text in a ROT.js display in your browser.
-Stay tuned for [Part 1](/rotjs-tutorial/part1)!
+[Click here for Part 1](/rotjs-tutorial/part1)!

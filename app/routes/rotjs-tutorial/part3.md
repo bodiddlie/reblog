@@ -554,4 +554,4 @@ we need to do is connect all the rooms with hallways:
 We loop over all our rooms connecting each one to the next room in the list. If you go ahead and run the application
 now you should have a randomly generated dungeon! This is an admittedly simple algorithm for connecting the rooms, and
 it leads to intersecting and overlapping hallways, but it gets the job done. You can find the finished code for this 
-part [here](https://github.com/bodiddlie/js-rogue-tutorial/tree/part3).
+part [here](https://github.com/bodiddlie/js-rogue-tutorial/tree/part3), and [click here for Part 4](/rotjs-tutorial/part4)!

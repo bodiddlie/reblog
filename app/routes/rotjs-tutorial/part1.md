@@ -216,4 +216,4 @@ this.display.clear();
 
 This will clear the screen between updates and make sure that it really looks like the player is moving around. You can
 find the complete code for this part of the tutorial [here](https://github.com/bodiddlie/js-rogue-tutorial/tree/Part1-fix).
-Part 2 will be coming later this week.
+[Click here to go on to Part 2](/rotjs-tutorial/part2)

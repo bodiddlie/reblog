@@ -597,4 +597,4 @@ cool things as we add new actions and capabilities in future tutorials. Go ahead
 can't walk through. 
 
 You can find a complete set of the code for this phase of the tutorial on [my github](https://github.com/bodiddlie/js-rogue-tutorial/tree/part2).
-Stay tuned later this week for Part 3!.
+[Click here to go on to Part 3](/rotjs-tutorial/part3)!
