@@ -4,7 +4,7 @@ date: 2022-07-13T08:00:00.000Z
 meta:
     title: 'ROT.js Tutorial Part 4: Field of View'
     date: "July 13, 2022"
-    description: "In this tutorial we'll be adding functionality to only draw parts of the map that are currently visible to the player or have been previously explored. We'll be calculating the player's field of view to accomplish this and displaying the map in different ways based on that calculation."
+    description: "In the previous tutorial, we made it so our game can render a full map on screen. However, roguelike games are about exploration into the unknown. In this chapter, we'll make it so we only draw portions of the map the player can see or that they have already explored. We'll be calculating the player's field of view to accomplish this and displaying the map in different ways based on that calculation."
 ---
 
 # {attributes.title}
