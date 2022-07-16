@@ -151,7 +151,7 @@ interface MovementMap {
 }
 ```
 
-This tricky bit of Typescript is saying that our `MovmentMap` type will have an indeterminate number of keys (represented
+This tricky bit of Typescript is saying that our `MovementMap` type will have an indeterminate number of keys (represented
 as strings), that all have values of type `Action`. This will make more sense with the next block of code that uses this
 interface to create a mapping of arrow keys to movement actions. Add this to the file as well:
 
