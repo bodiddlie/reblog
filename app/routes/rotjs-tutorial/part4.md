@@ -222,4 +222,5 @@ this.render()
 If you run the application now, most of the map should be pure black, with a yellow section highlighting where the 
 player currently can see. If you move around you notice the places you've already seen are now the shade of blue we 
 saw in previous tutorials. You can find the complete code for this tutorial [in the GitHub repo](https://github.com/bodiddlie/js-rogue-tutorial/tree/part4).
-Stay tuned for Part 5 later this week!
+
+[Click here to move on to Part 5](/rotjs-tutorial/part5)!
