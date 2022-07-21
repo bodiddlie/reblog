@@ -458,3 +458,5 @@ this.render();
 
 If you run the game and check the console, you should see output after every turn you take saying that the monsters are
 waiting to do something. We'll tackle that in the next chapter. [Click here to see the complete code for this tutorial](https://github.com/bodiddlie/js-rogue-tutorial/commits/part5).
+
+[Click here to move on to Part 6](/rotjs-tutorial/part6)!
