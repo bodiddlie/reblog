@@ -4,7 +4,7 @@ date: 2022-07-20T08:00:00.000Z
 meta:
     title: 'ROT.js Tutorial Part 6: Dealing and Taking Damage'
     date: "July 20, 2022"
-    description: "Previously, we added some monsters to our dungeon, but they don't do anything yet. In this chapter, we'll bring them to life. We'll make it so the monsters follow us once we enter their line of sight. Then we'll add the ability for them to damage our player as well as for our player to damage them. Finally, we'll update the game so that dealing enough damage will kill an entity.
+    description: "Previously, we added some monsters to our dungeon, but just stand around lifeless. In this chapter, we'll bring them to life. We'll make it so the monsters follow us once we enter their line of sight. Then we'll add the ability for them to damage our player as well as for our player to damage them. Finally, we'll update the game so that dealing enough damage will kill an entity."
 ---
 
 # {attributes.title}
