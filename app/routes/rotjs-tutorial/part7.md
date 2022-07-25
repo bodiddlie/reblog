@@ -2,9 +2,9 @@
 title: 'ROT.js Tutorial Part 7: User Interface'
 date: 2022-07-24T08:00:00.000Z
 meta:
-title: 'ROT.js Tutorial Part 7: User Interface'
-date: "July 24, 2022"
-description: "In the last chapter we added ways for the player to interact with the world in our game. We can deal damage to and take damage from monsters. In this chapter we'll add some ways to provide some valuable information about the world to the player. We'll add user interface elements for displaying the player's current health, a log of events that have happened during the course of the game, and a way to get information about the entities visible on the screen."
+    title: 'ROT.js Tutorial Part 7: User Interface'
+    date: "July 24, 2022"
+    description: "In the last chapter we added ways for the player to interact with the world in our game. We can deal damage to and take damage from monsters. In this chapter we'll add some ways to provide some valuable information about the world to the player. We'll add user interface elements for displaying the player's current health, a log of events that have happened during the course of the game, and a way to get information about the entities visible on the screen."
 ---
 
 # {attributes.title}
