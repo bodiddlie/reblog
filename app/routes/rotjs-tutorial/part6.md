@@ -809,3 +809,4 @@ Here we move the input handling inside an if statement that checks if the player
 we won't process any input, perform any actions, or handle enemy turns. Go ahead and run the application now and if you allow
 the player to die you shouldn't be able to move around anymore. You can find the complete code for this chapter [here](https://github.com/bodiddlie/js-rogue-tutorial/tree/part6).
 
+[Click here to move on to Part 7](/rotjs-tutorial/part7)!
