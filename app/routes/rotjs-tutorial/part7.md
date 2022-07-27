@@ -954,3 +954,5 @@ This gives a more interesting look where the log overlays the map. Run the appli
 bring up the history and scroll through it.
 
 You can find the complete code for this chapter [here](https://github.com/bodiddlie/js-rogue-tutorial/tree/part7).
+
+[Click here to move on to Part 8](/rotjs-tutorial/part8)!
