@@ -19,7 +19,7 @@ of refactoring once again.
 
 As I worked on this chapter I became increasingly aware of how much code was getting added to the `input-handler.ts` file.
 Most of the code we've been adding in there has to do with actions and not actual input handling. In the beginning of this
-series it made some sense since actions were just a result of handling input. Now that we've added items and AI, actions
+series it made sense since actions were just a result of handling input. Now that we've added items and AI, actions
 can be produced as a result of several things, not just a key being pressed. So to start let's move all the actions out
 of `input-handler.ts` and into their own file. Create a new `actions.ts` file and add the below:
 
@@ -185,7 +185,7 @@ export class DropItem extends ItemAction {
 }
 ```
 
-We haven't changed much in these actions, just moved them to their own file, so we know where to look when modifying
+We haven't changed much in these actions, just moved them to their own file so we know where to look when modifying
 actions. In a larger game, it might make sense to take this even further and make `actions` a directory with modules
 representing specific kinds of actions (e.g. Log, Item, Combat). For our little tutorial though, this will suffice.
 
@@ -268,7 +268,7 @@ export enum InputState {
 }
 ```
 
-`LogMap` is used for mapping key presses to amounts scrolled in our log. `DirectionMap` is be used for mapping key
+`LogMap` is used for mapping key presses to amounts scrolled in our log. `DirectionMap` is to be used for mapping key
 presses to a direction something should be moved. `InputState` should look familiar as it is a copy of the enum we have
 in `engine.ts`. I realized as I started work on this chapter that the "state" we were using to determine what to render
 and how to handle updates in the engine was all tied to what input mode the game was currently in. Because of this, it 
@@ -483,7 +483,7 @@ update(event: KeyboardEvent) {
 }
 ```
 
-Since we have standardized all our input handlers to return an action, we can simplify our `update` code to just perform
+Since we have standardized all our input handlers to return an action, we can simplify our `update` code to perform
 an action if one was returned. We then update our `inputHandler` instance variable to point to the `nextHandler` that was
 set on the current handler. If the input handler stays the same, then nothing changes. However, if the current handler
 has determined that further input should be processed by a different handler, this will allow that to happen. 
