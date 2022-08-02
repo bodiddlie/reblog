@@ -1170,3 +1170,5 @@ This method checks if parent of the item is an inventory and if so, removes it f
 and the potions should disappear from the inventory after use. 
 
 You can find the complete code for this chapter [here](https://github.com/bodiddlie/js-rogue-tutorial/tree/part8).
+
+[Click here to move on to Part 9](/rotjs-tutorial/part9)!
