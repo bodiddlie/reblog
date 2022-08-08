@@ -1440,3 +1440,5 @@ Run the game now and find a fireball scroll. When you use it you should see a la
 This is the area that the scroll will cause damage in. Be careful to not kill yourself with it!
 
 You can find the complete code for this chapter [here](https://github.com/bodiddlie/js-rogue-tutorial/tree/part9).
+
+[Click here to move on to Part 10](/rotjs-tutorial/part10)!

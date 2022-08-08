@@ -12,6 +12,7 @@ import * as part6 from './part6.md';
 import * as part7 from './part7.md';
 import * as part8 from './part8.md';
 import * as part9 from './part9.md';
+import * as part10 from './part10.md';
 
 function postFromModule(mod: any) {
   return {
@@ -32,6 +33,7 @@ export const loader: LoaderFunction = async () => {
     postFromModule(part7),
     postFromModule(part8),
     postFromModule(part9),
+    postFromModule(part10),
   ])
 }
 
