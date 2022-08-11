@@ -2,7 +2,7 @@
 title: 'ROT.js Tutorial Part 12: Increasing Difficulty'
 date: 2022-08-11T08:00:00.000Z
 meta:
-    title: 'ROT.js Tutorial Part 11: Increasing Difficulty'
+    title: 'ROT.js Tutorial Part 12: Increasing Difficulty'
     date: "August 11, 2022"
     description: "In this chapter, we'll be updating our game to get harder as the player goes deeper into the dungeon. Each floor will have a chance of having more monsters per room, and of spawning more difficult monsters. We'll balance this with an increased chance for strong items."
 ---
