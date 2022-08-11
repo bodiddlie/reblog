@@ -1400,3 +1400,5 @@ render() {
 If you run the game now you should be able to save a game at any time by pressing the 's' key. Try reloading the game 
 after that and hitting 'c' at the main menu and it should load your save exactly where you left off. You can find
 the complete code for this chapter [here](https://github.com/bodiddlie/js-rogue-tutorial/tree/part10).
+
+[Click here to move on to Part 11](/rotjs-tutorial/part11)!
