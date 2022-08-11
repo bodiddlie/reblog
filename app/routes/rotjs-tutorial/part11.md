@@ -698,7 +698,7 @@ private static load(
   if (!playerEntity) throw new Error('shit broke');
   const player = spawnPlayer(playerEntity.x, playerEntity.y);
   player.fighter.hp = playerEntity.fighter?.hp || player.fighter.hp;
-  player.level.currentLevel = playerEntity.level?.currentLevel;
+  player.level.currentLevel = playerEntiGty.level?.currentLevel;
   player.level.currentXp = playerEntity.level?.currentXp;
   window.engine.player = player;
 ```
@@ -779,3 +779,5 @@ current status of the player. Pressing any key will return to the game screen.
 
 Run the game and you should be able to press the 'c' key to see your current experience, level, and attributes. You can 
 find the complete code for this chapter [here](https://github.com/bodiddlie/js-rogue-tutorial/tree/part11).
+
+[Click here to move on to Part 12](/rotjs-tutorial/part12)!
