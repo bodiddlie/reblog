@@ -10,8 +10,8 @@ meta:
 # {attributes.title}
 {attributes.date.toDateString()}
 
-In this chapter, we'll be updating our game to get harder as the player goes deeper into the dungeon. Each floor will
-have a chance of having more monsters per room, and of spawning more difficult monsters. We'll balance this with an 
+In this chapter, we'll be updating our game to get more difficult as the player goes deeper into the dungeon. Each successive floor will
+have a chance of having more monsters per room and spawning more difficult monsters. We'll balance this with an 
 increased chance for strong items.
 
 ### Increasing Monster Counts
@@ -77,7 +77,7 @@ function getMaxValueForFloor(
 ```
 
 We loop over each of the entries in the `FloorValue` array, and check if the current floor is under the minimum or not. 
-If it is we break from the loop and return the new max that we found. If it isn't, then we continue the loop, increasing
+If it is, we break from the loop and return the new max that we found. If it isn't, then we continue the loop, increasing
 the maximum value we'll return.
 
 Next let's update `generateDungeon` to take in the current floor that it's generating for, and pass that to the `placeEntities`
@@ -121,8 +121,8 @@ Run the game, and you should see monster and item counts within the new maximums
 
 ### Weighted Entity Choices
 
-We've changed how many entities we spawn into a map, but not which kinds of entities. If the player gets a bunch of 
-over-powered lightning scrolls on the first level it would be too easy. Also, if they ran into rooms with all trolls,
+We've changed how many entities we spawn into a map, but not which kind of entities. If the player gets a bunch of 
+over-powered lightning scrolls on the first level it would be too easy. If they ran into rooms with all trolls,
 it would be too hard. We need a way to gradually increase the difficulty as the player progresses. To do this we'll use
 a function from ROT.js that takes a weighted set of options, and chooses them at random based on the weights. 
 
@@ -169,9 +169,9 @@ type WeightedChoices = {
 };
 ```
 
-A `Choice` object is just a map with a key that is a string that will be a key into our `spawnMap` and a weight that is 
-how much weight the `RNG` module should give when making a choice. `WeightedChoices` is a map that has a list of choices
-for a given floor. Let's create our options now using these types:
+A `Choice` object is a key-value map. The key is a string that will be the name of one of our spawn functions. The value
+is a weight that will govern how likely the `RNG` module is to choose that spawn function for us to use. `WeightedChoices`
+objects represent a minimum floor and the possible options for that floor.
 
 ```typescript
 const ITEM_CHANCES: WeightedChoices[] = [
@@ -241,7 +241,7 @@ function getWeights(
 ```
 
 Much like `getMaxValueForFloor` we loop over a given set of options and build up the map of weights that apply to a given
-floor. With this function in plce we just need to update `placeEntities` to use it. First we'll update the loop where
+floor. With this function in place, we just need to update `placeEntities` to use it. First we'll update the loop where
 we add monsters to the map:
 
 ```typescript
