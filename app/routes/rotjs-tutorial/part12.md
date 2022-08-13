@@ -284,3 +284,5 @@ The item loop works just like the monster loop, using the `ITEM_CHANCES` options
 game and progress through the dungeon. On floor one you should only see orcs and health potions, but as you go deeper
 you should start running into more enemies per room, start seeing trolls more often, and see different items. You
 can find the complete code for this chapter [here](https://github.com/bodiddlie/js-rogue-tutorial/tree/part12).
+
+[Click here to move on to Part 13](/rotjs-tutorial/part13)!
