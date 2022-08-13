@@ -770,3 +770,5 @@ while and delve deeper you should start to see swords and chain mail as well.
 
 If you made it all the way to the end of this series, then congratulations and *THANK YOU* so much for reading! This
 has been a ton of fun to work on. I hope it was fun for you to follow!
+
+You can find the complete code for the whole series at [my GitHub](https://github.com/bodiddlie/js-rogue-tutorial).
