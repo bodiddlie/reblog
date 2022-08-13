@@ -1,20 +1,20 @@
 ---
 title: 'ROT.js Tutorial Part 13: Equipment'
-date: 2022-08-13T08:00:00.000Z
+date: 2022-08-12T08:00:00.000Z
 meta:
     title: 'ROT.js Tutorial Part 13: Equipment'
-    date: "August 13, 2022"
+    date: "August 12, 2022"
     description: "We've reached the final chapter of this tutorial series. In this entry we'll add weapons and armor that the player can add to their inventory and then equip. This equipment will bolster the player's attributes and allow them to hit harder or block more damage."
 ---
 
 # {attributes.title}
 {attributes.date.toDateString()}
 
-We've reached the final chapter of this tutorial series. In this entry we'll add weapons and armor that the player can add
+We've reached the final chapter of this tutorial series. In this entry, we'll add weapons and armor that the player can add
 to their inventory and then equip. This equipment will bolster the player's attributes and allow them to hit harder or
 block more damage. 
 
-We'll get started by adding a new file called `equipment-types.ts`. In this file we'll create an enum that will represent
+We'll get started by adding a new file called `equipment-types.ts`. In this file, we'll create an enum that will represent
 the different categories of equipment we'll have in our game:
 
 ```typescript
@@ -46,7 +46,7 @@ export abstract class Equippable extends BaseComponent {
 }
 ```
 
-The `Equippable` class contains data that tells what category of equipment it is, and what bonuses it provides to power
+The `Equippable` class contains data of what category equipment it is, and what bonuses it provides to power
 and defense. In this same file let's create some subclasses that represent specific equipment:
 
 ```typescript
@@ -76,7 +76,7 @@ export class ChainMail extends Equippable {
 ```
 
 The benefit of creating classes like this instead of just instantiating the `Equippable` class is we have the flexibility
-to add functionality to these subclasses if we wanted to later.
+to add functionality to these subclasses if we want to later.
 
 Next we'll make some changes to the `Item` class in `entity.ts`. First, add some new imports at the top of the file:
 
@@ -210,7 +210,7 @@ perform(entity: Entity, gameMap: GameMap) {
 }
 ```
 
-Next we'll create another component that will operate kind of like an inventory. This class will have "slots" for equipment:
+Next we'll create another component that will operate like an inventory. This class will have "slots" for equipment:
 one for a weapon, and one for armor. We'll then add this equipment inventory to our `Actor` class. Start by creating
 a new file in `components` called `equipment.ts`:
 
@@ -338,7 +338,7 @@ toggleEquip(item: Item, addMessage: boolean = true) {
 }
 ```
 
-This method check the type of equipment we have and then either equips or removes it from the slot for that type. 
+This method checks the type of equipment we have and then either equips or removes it from the slot for that type. 
 
 Now we can add this component to our `Actor` class in `entity.ts`. First make sure you add the import for `Equipment` at
 the top of the file. Then update `Actor` to look like this:
@@ -451,7 +451,7 @@ export class Fighter extends BaseComponent {
   }
 ```
 
-We've update the constructor to take in a base power and defense now instead of the raw values. We'll use these to calclulate
+We've updated the constructor to take in a base power and defense instead of the raw values. We'll use these to calculate
 the total attribute along with any equipment bonuses. Let's add a few getters to do this for us:
 
 ```typescript
@@ -699,7 +699,7 @@ export class EquipAction extends Action {
 }
 ```
 
-The last thing we need to do is bring this all together with some input handling. Open `input-handler.ts` and be sure
+Lastly, we'll bring this all together with some input handling. Open `input-handler.ts` and be sure
 to import our new `EquipAction` class at the top. We'll update our `InventoryInputHandler` to have an `onRender` method
 to handle the rendering we removed earlier:
 
@@ -731,7 +731,7 @@ onRender(display: Display) {
 }
 ```
 
-THis works similarly to the way we rendered the inventory previously, with the addition of drawing an `(E)` next to 
+This works similarly to the way we previously rendered the inventory, with the addition of drawing an `(E)` next to 
 an equipped item. With that in place all we have to do is update the keyboard handling:
 
 ```typescript
@@ -764,8 +764,8 @@ handleKeyboardInput(event: KeyboardEvent): Action | null {
 }
 ```
 
-When using an item, we check whether the item is consumable or equippable and return the relevant action. Run the game
-and if you pull up your inventory you should see that you start with a dagger and some leather armor. If you play for a 
+When using an item, we check whether it is consumable or equippable and return the relevant action. Run the game
+and when you pull up your inventory, you should see that you start with a dagger and some leather armor. If you play for a 
 while and delve deeper you should start to see swords and chain mail as well. 
 
 If you made it all the way to the end of this series, then congratulations and *THANK YOU* so much for reading! This
