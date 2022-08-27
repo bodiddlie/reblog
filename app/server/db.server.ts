@@ -7,17 +7,17 @@ const supabase = createClient(
   process.env.SUPABASE_KEY as string,
 );
 
-export async function getPosts() {
+export async function getPosts(category: string, ascending: boolean = false) {
   const { data: posts } = await supabase
     .from('posts')
     .select('*')
     .is('published', true)
-    .eq('category', 'blog')
-    .order('publish_date', { ascending: false });
+    .eq('category', category)
+    .order('publish_date', { ascending });
   return posts;
 }
 
-export async function getPost(slug) {
+export async function getPost(slug: string) {
   const { data: post } = await supabase
     .from('posts')
     .select('*')
@@ -32,6 +32,5 @@ export async function getPost(slug) {
     },
   });
 
-  console.log(result);
   return result;
 }

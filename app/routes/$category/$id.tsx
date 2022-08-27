@@ -7,6 +7,8 @@ import { getMDXComponent } from 'mdx-bundler/client';
 import dayjs from 'dayjs';
 
 export const loader: LoaderFunction = async ({ params }) => {
+  // TODO: redirect?
+  if (!params.id) return;
   const post = await getPost(params.id);
   return post;
 };

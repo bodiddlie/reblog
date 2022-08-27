@@ -3,8 +3,12 @@ import type { LoaderFunction } from '@remix-run/node';
 import { getPosts } from '~/server/db.server';
 import dayjs from 'dayjs';
 
-export const loader: LoaderFunction = async () => {
-  return await getPosts();
+export const loader: LoaderFunction = async ({ params }) => {
+  const { category } = params;
+  // TODO: redirect?
+  if (!category) return;
+  const ascending = category === 'rotjs-tutorial';
+  return await getPosts(category, ascending);
 };
 
 export default function Index() {
